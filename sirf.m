@@ -11,7 +11,7 @@ fis = readfis ('sirf.fis');
 %## Plot the Tip and Check + Tip as functions of Food-Quality
 %gensurf(fis,);
 %data=load('inputs.mat');
-RS =  evalfis([69.642 68.389 49.512],fis,100);
+RS =  evalfis([69.642 68.389 49.512],fis,101);
 disp(['RS=' num2str(RS)]);
 
 
