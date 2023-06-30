@@ -12,7 +12,7 @@
 ### This tutorial guides how to use FRIS, a risk assessment tool designed to identify the degree of security risk an organization is at, based on ISO/IEC 27002:2022.
 
 ## Requirements
-To use FRIS, it is necessary to know the Fuzzy Risk Assessment Framework (FSRA) (file Conntrol.docx), an integral part of FRIS. In addition, you must have MatLab or GNU Octave software installed on your computer.
+To use FRIS, it is necessary to know the Fuzzy Risk Assessment Framework (FSRA) (file Controls.docx), an integral part of FRIS. In addition, you must have MatLab or GNU Octave software installed on your computer.
 
 ### How to Install MatLab and Fuzzy Logic Toolbox on Linux: To install MATLAB on Linux, you must download the installer from MathWorks' official website (https://www.mathworks.com/).
      * cd /location/of/your/downloaded/file
