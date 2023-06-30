@@ -11,22 +11,18 @@ fis = readfis ('sirf.fis');
 %## Plot the Tip and Check + Tip as functions of Food-Quality
 %gensurf(fis,);
 data=load('inputs.mat');
-%aux = [];
-for i=1:5000
+aux = [ ];
+for i=1:2
   if data.inputs(i,1) < 40 && data.inputs(i,2) < 40 && data.inputs(i,3) < 40
-    fis.defuzzificationMethod = 'mom';
+    fis.defuzzMethod = 'mom';
     out = evalfis([data.inputs(i,1), data.inputs(i,2), data.inputs(i,3)],fis,101);
     aux = [aux; out];
+    disp(['MoM=' num2str(out)]);
   else
-    fis.defuzzificationMethod = 'centroid';
+    fis.defuzzMethod = 'centroid';
     out = evalfis([data.inputs(i,1), data.inputs(i,2), data.inputs(i,3)],fis,101);
     aux = [aux; out];
+    disp(['CC=' num2str(out)]);
   end
-
  % disp(out);
 end
-
-%disp('-----Octave, save -V7 O_MOM.mat aux-------------------------------------------------------------------');
-%disp(aux)
-%disp('-----MatLab save('')-------------------------------------------------------------------');
-
