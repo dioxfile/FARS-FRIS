@@ -29,7 +29,7 @@ To install the fuzzy-logic-toolkit in Octave, open Octave and type:
 
 How to Install MatLab and Fuzzy Logic Toolbox on Windows: To install MATLAB on Windows, you need to download the installer from MathWorks' official website (https://www.mathworks.com/products/get-matlab.html?s_tid=gn_getml ). After downloading, run the file and follow the installation wizard instructions. During installation, select and install the “Fuzzy Logic Toolbox.”
 
-Understanding FRIS and FSRA
+#### Understanding FRIS and FSRA
 FRIS follows three FSRA controls, which contain 93 sub-items of controls suggested by ISO/IEC 27002:2022—for example, Security Practices (SP), Software (S), and People (P).
 
 Assessment Strategy of the Security Risk Level in which the Organization is.
