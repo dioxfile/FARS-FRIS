@@ -41,7 +41,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 
 ### How to use FRIS
   * FRIS accepts a matrix [N X 3], where N represents the number of rows and three the number of columns, or simply a vector with elements [x1,x2,x3].
-### How To assess risk using FRIS, follow these steps:
+### To assess risk using FRIS, follow these steps:
   * Loading a Database: Use the command load('inputs.mat'); in Octave or Matlab to load the database. This database is used to test FRIS.
 
 ### Assess the Risks: Use the function evalfis(fris,[],100); to assess risks based on the loaded database. Change Defuzzification Method: You can change the defuzzification method using one of the following commands:
