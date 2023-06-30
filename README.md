@@ -44,14 +44,6 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ### To assess risk using FRIS, follow these steps:
   * Loading a Database: Use the command load('inputs.mat'); in Octave or Matlab to load the database. This database is used to test FRIS.
 
-### Assess the Risks: Use the function evalfis(fris,[],100); to assess risks based on the loaded database. Change Defuzzification Method: You can change the defuzzification method using one of the following commands:
-     * fis.defuzzificationMethod = 'mom';
-     * fis.defuzzificationMethod = 'centroid';
-
-### Save Results: After evaluating the risks, you can save the obtained results using one of the following commands:
-     * Octave: save -V7 outputs.mat results;
-     * MatLab: save('outputs.mat', 'results');
-
 ## How to can I use FRIS on GNU Octave and MATLAB?
     * First - run GNU Octave or MATLAB;
     * Second - On line 15 of sirf.m change the code from for i=1:5000 to for i=1:1 (since we are only going to run one input (e.g., SP=56%, S=46%, and P=61 %)
@@ -63,3 +55,6 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * CC=50
 
 It means that with these entries the security risk is 50%.
+
+## OBS:
+  *  O código sirf.m foi projetado para usar o método da centroide se os valores de entrada entre 60% e 100%. Todavia, se os valores de entrada forem menor que 40% o método de defuzzificação a ser usado será MoM (Média dos Máximos). Além disso, para volores entre 40% e 59,999% qualquer um dos métodos pode ser usado porque nos testes ambos apresentaram desempenho semelhantes. No entanto, para escolher o método de defuzzificação o arquivo "sirf.fis" deve ser alterano na linha 12: DefuzzMethod='centroid' or DefuzzMethod='mom'.
