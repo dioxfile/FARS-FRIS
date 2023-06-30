@@ -53,8 +53,9 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 
 ### After that, the following result will appear:
 * CC=50
-
-It means that with these entries the security risk is 50%.
+It means that with these entries, the security risk is 50%.
 
 ## OBS:
-  *  O código sirf.m foi projetado para usar o método da centroide se os valores de entrada entre 60% e 100%. Todavia, se os valores de entrada forem menor que 40% o método de defuzzificação a ser usado será MoM (Média dos Máximos). Além disso, para volores entre 40% e 59,999% qualquer um dos métodos pode ser usado porque nos testes ambos apresentaram desempenho semelhantes. No entanto, para escolher o método de defuzzificação o arquivo "sirf.fis" deve ser alterano na linha 12: DefuzzMethod='centroid' or DefuzzMethod='mom'.
+  * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, to choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
+  * Here, input means the values of the security controls: Practices (SP), Software (S), and People (P).
+
