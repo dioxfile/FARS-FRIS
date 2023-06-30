@@ -37,7 +37,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ### Assessment Strategy of the Security Risk Level in which the Organization is.
 #### Procedures for using the FRIS:
   * The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%;
-  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download the file and check how many items of each control the company has complied with, as explained above.
+  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download (e.g., Controls.docx) the file and check how many items of each control the company has complied with, as explained above.
 
 ### How to use FRIS
   * FRIS accepts a matrix [N X 3], where N represents the number of rows and three the number of columns, or simply a vector with elements [x1,x2,x3]. ### How To assess risk using FRIS, follow these steps:
