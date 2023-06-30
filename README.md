@@ -9,11 +9,10 @@
 Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
 This tutorial guides how to use FRIS, a risk assessment tool developed to identify the degree of security risk in which the organization is based on ISO/IEC 27002:2022.
 
-#Requirements
+## Requirements
 To use FRIS, it is necessary to know the Fuzzy Risk Assessment Framework (FSRA), an integral part of FRIS. In addition, you must have MatLab or GNU Octave software installed on your computer.
 
-How to Install MatLab and Fuzzy Logic Toolbox on Linux: To install MATLAB on Linux, you must download the installer from MathWorks' official website (https://www.mathworks.com/).
-
+### How to Install MatLab and Fuzzy Logic Toolbox on Linux: To install MATLAB on Linux, you must download the installer from MathWorks' official website (https://www.mathworks.com/).
      * cd /location/of/your/downloaded/file
      * sudo chmod +x install
      * sudo ./install
@@ -33,10 +32,10 @@ How to Install MatLab and Fuzzy Logic Toolbox on Linux: To install MATLAB on Lin
 #### Understanding FRIS and FSRA
 FRIS follows three FSRA controls, which contain 93 sub-items of controls suggested by ISO/IEC 27002:2022—for example, Security Practices (SP), Software (S), and People (P).
 
-Assessment Strategy of the Security Risk Level in which the Organization is.
-Procedures for using the FRIS:
-The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%.
-Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download the file and check how many items of each control the company has complied with, as explained above.
+### Assessment Strategy of the Security Risk Level in which the Organization is.
+#### Procedures for using the FRIS:
+  * The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%;
+  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download the file and check how many items of each control the company has complied with, as explained above.
 
 ### How to use FRIS
   * FRIS accepts a matrix [N X 3], where N represents the number of rows and three the number of columns, or simply a vector with elements [x1,x2,x3]. ### How To assess risk using FRIS, follow these steps:
