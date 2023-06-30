@@ -60,6 +60,7 @@ Save Results: After evaluating the risks, you can save the obtained results usin
     * Fourth - At the prompt, enter the following command: save -V7 inputs.mat inputs
     * Fifth - run FRIS, At the prompt, with the following command: run sirf.m
 
-After that, the following result will appear:
-    * CC=50
-It means that with these entries, the security risk is 50%.
+### After that, the following result will appear:
+* CC=50
+
+It means that with these entries the security risk is 50%.
