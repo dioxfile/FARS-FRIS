@@ -52,3 +52,4 @@ Save Results: After evaluating the risks, you can save the obtained results usin
      * Octave: save -V7 outputs.mat results;
      * MatLab: save('outputs.mat', 'results');
 
+# How to I can use FRIS on GNU Octave and MATLAB?
