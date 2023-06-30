@@ -49,7 +49,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
      * Octave: save -V7 outputs.mat results;
      * MatLab: save('outputs.mat', 'results');
 
-# How to can I use FRIS on GNU Octave and MATLAB?
+## How to can I use FRIS on GNU Octave and MATLAB?
     * First - run GNU Octave or MATLAB;
     * Second - On line 15 of sirf.m change the code from for i=1:5000 to for i=1:1 (since we are only going to run one input (e.g., SP=56%, S=46%, and P=61 %)
     * Third - At the prompt enter the following code: inputs=[56, 46, 61];. Press <ENTER>
