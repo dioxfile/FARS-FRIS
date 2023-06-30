@@ -6,8 +6,8 @@
   * Test results with FRIS (e.g., Files *.mat).                                       
   * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).           
 
-Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
-This tutorial guides how to use FRIS, a risk assessment tool developed to identify the degree of security risk in which the organization is based on ISO/IEC 27002:2022.
+## Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
+### This tutorial guides how to use FRIS, a risk assessment tool developed to identify the degree of security risk in which the organization is based on ISO/IEC 27002:2022.
 
 ## Requirements
 To use FRIS, it is necessary to know the Fuzzy Risk Assessment Framework (FSRA), an integral part of FRIS. In addition, you must have MatLab or GNU Octave software installed on your computer.
