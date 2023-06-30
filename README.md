@@ -52,4 +52,13 @@ Save Results: After evaluating the risks, you can save the obtained results usin
      * Octave: save -V7 outputs.mat results;
      * MatLab: save('outputs.mat', 'results');
 
-# How to I can use FRIS on GNU Octave and MATLAB?
+# How to can I use FRIS on GNU Octave and MATLAB?
+    * First - run GNU Octave or MATLAB;
+    * Second - On line 15 of sirf.m change the code from for i=1:5000 to for i=1:1 (since we are only going to run one input (e.g., SP=56%, S=46%, and P=61 %)
+    * Third - At the prompt enter the following code: inputs=[56, 46, 61];. Press <ENTER>
+    * Fourth - At the prompt, enter the following command: save -V7 inputs.mat inputs
+    * Fifth - run FRIS, At the prompt, with the following command: run sirf.m
+
+After that, the following result will appear:
+    * CC=50
+It means that with these entries, the security risk is 50%.
