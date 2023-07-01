@@ -5,7 +5,7 @@
    * This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A IPICULAR PURPOSE.  See the GNU General Public License for more details.                          
    * You should have received a copy of the GNU General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
 ### FSRA and FRIS based on Standard ISO/IEC 27002:2022
-  * 5000 inputs to FRIS (e.g., File inputs.mat).                                       
+  * 5000 inputs to the FRIS (e.g., File inputs.mat).                                       
   * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).           
 
 ## Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
