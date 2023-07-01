@@ -59,7 +59,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ## How to can I use FRIS on GNU Octave and MATLAB with 5000 input?
     * First - run GNU Octave or MATLAB;
     * Second - On line 15 of sirf.m change the code from 'for i=1:1' to 'for i=1:5000' 
-    * Third - At the prompt, enter the following code: load inputs.mat;. Press <ENTER>
+    * Third - At the prompt, enter the following code: 'load inputs.mat' and Press <ENTER>
     * Fourth - At the prompt, enter the following command: save -V7 inputs.mat inputs
     * Fifth - run FRIS, At the prompt, with the following command: run sirf.m
     * Sixth - To see the entries run the file print.m (e.g., run print.m) after performing steps First, Second, and Third
