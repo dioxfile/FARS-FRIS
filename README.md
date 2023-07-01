@@ -2,11 +2,12 @@
 ### 1 - This program is free software; 
 ### 2 - You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; 
 ### 3 - Either version 3 of the License or (at your option) any later version.                               
-   * This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A IPICULAR PURPOSE.  See the GNU General Public License for more details.                          
+   * This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A IPICULAR PURPOSE.  See the GNU General Public License for more details.                          
    * You should have received a copy of the GNU General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
 ### FSRA and FRIS based on Standard ISO/IEC 27002:2022
   * 5000 inputs to the FRIS (e.g., File inputs.mat).                                       
-  * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).           
+  * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).
+  * 5000 FRIS outputs (e.g., File output.txt).    
 
 ## Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
 ### This tutorial guides how to use FRIS, a risk assessment tool designed to identify the degree of security risk an organization is at, based on ISO/IEC 27002:2022.
@@ -37,23 +38,34 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ### Assessment Strategy of the Security Risk Level in which the Organization is.
 #### Procedures for using the FRIS:
   * The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%;
-  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download the file (e.g., Controls.docx) and check how many items of each control the company has complied with, as explained above.
+  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of the security risk it is in, the Security Analyst must download the file (e.g., Controls.docx) and check how many items of each control the company has complied with, as explained above.
 
 ### How to use FRIS
   * FRIS accepts a matrix [N X 3], where N represents the number of rows and three the number of columns, or simply a vector with elements [x1,x2,x3].
 ### To assess risk using FRIS, follow these steps:
   * Loading a Database: Use the command load('inputs.mat'); in Octave or Matlab to load the database. This database is used to test FRIS.
 
-## How to can I use FRIS on GNU Octave and MATLAB?
+## How to can I use FRIS on GNU Octave and MATLAB with one input?
     * First - run GNU Octave or MATLAB;
-    * Second - On line 15 of sirf.m change the code from for i=1:5000 to for i=1:1 (since we are only going to run one input (e.g., SP=56%, S=46%, and P=61 %)
-    * Third - At the prompt enter the following code: inputs=[56, 46, 61;];. Press <ENTER>
+    * Second - On line 15 of sirf.m change the code from for 'i=1:5000' to 'for i=1:1' (since we are only going to run one input (e.g., SP=56%, S=46%, and P=61 %)
+    * Third - At the prompt, enter the following code: inputs=[56, 46, 61;];. Press <ENTER>
     * Fourth - At the prompt, enter the following command: save -V7 inputs.mat inputs
     * Fifth - run FRIS, At the prompt, with the following command: run sirf.m
 
 ### After that, the following result will appear:
 * CC=50
 It means that with these entries, the security risk is 50%.
+
+## How to can I use FRIS on GNU Octave and MATLAB with 5000 input?
+    * First - run GNU Octave or MATLAB;
+    * Second - On line 15 of sirf.m change the code from 'for i=1:1' to 'for i=1:5000' 
+    * Third - At the prompt, enter the following code: load inputs.mat;. Press <ENTER>
+    * Fourth - At the prompt, enter the following command: save -V7 inputs.mat inputs
+    * Fifth - run FRIS, At the prompt, with the following command: run sirf.m
+    * Sixth - To see the entries run the file print.m (e.g., run print.m) after performing steps First, Second, and Third
+    
+### After that, the following result will appear:
+* After that, 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum
 
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
