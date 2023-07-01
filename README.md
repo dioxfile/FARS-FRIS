@@ -54,7 +54,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 
 ### After that, the following result will appear:
 * CC=50
-It means that with these entries, the security risk is 50%.
+* It means that the security risk is 50% with these entries.
 
 ## How to can I use FRIS on GNU Octave and MATLAB with 5000 input?
     * First - run GNU Octave or MATLAB;
@@ -65,7 +65,7 @@ It means that with these entries, the security risk is 50%.
     * Sixth - To see the entries run the file print.m (e.g., run print.m) after performing steps First, Second, and Third
     
 ### After that, the following result will appear:
-* After that, 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum
+* 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum (Or Mean Maxima)
 
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
