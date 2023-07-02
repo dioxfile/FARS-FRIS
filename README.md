@@ -6,8 +6,7 @@
    * You should have received a copy of the GNU General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
 ### FSRA and FRIS based on Standard ISO/IEC 27002:2022
   * 5000 inputs to the FRIS (e.g., File inputs.mat).                                       
-  * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).
-  * 5000 FRIS outputs (e.g., File output.txt).    
+  * MatLab and GNU Octave Codes (Fuzzy Logic Package) (e.g., Files *.m and *.fis).  
 
 ## Tutorial: How to Use the Fuzzy Risk Inference System (FRIS) Introduction
 ### This tutorial guides how to use FRIS, a risk assessment tool designed to identify the degree of security risk an organization is at, based on ISO/IEC 27002:2022.
@@ -56,7 +55,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * CC=50
 * It means that the security risk is 50% with these entries.
 
-## How to can I use FRIS on GNU Octave and MATLAB with 5000 input?
+## How to can I use FRIS on GNU Octave and MATLAB with 5000 inputs?
     * First - run GNU Octave or MATLAB;
     * Second - On line 15 of sirf.m change the code from 'for i=1:1' to 'for i=1:5000' 
     * Third - At the prompt, enter the following code: 'load inputs.mat' and Press <ENTER>
