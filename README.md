@@ -14,7 +14,8 @@
 ## Requirements
 To use FRIS, it is necessary to know the Fuzzy Risk Assessment Framework (FSRA) (file Controls.docx), an integral part of FRIS. In addition, you must have MatLab or GNU Octave software installed on your computer.
 
-### How to Install MatLab and Fuzzy Logic Toolbox on Linux: To install MATLAB on Linux, you must download the installer from MathWorks' official website (https://www.mathworks.com/).
+### How to Install MatLab and Fuzzy Logic Toolbox on Linux: 
+#### To install MATLAB on Linux, you must download the installer from MathWorks' official website (https://www.mathworks.com/).
      * cd /location/of/your/downloaded/file
      * sudo chmod +x install
      * sudo ./install
