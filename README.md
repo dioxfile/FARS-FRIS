@@ -37,8 +37,8 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 
 ### Assessment Strategy of the Security Risk Level in which the Organization is.
 #### Procedures for using the FRIS:
-  * The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%;
-  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of the security risk it is in, the Security Analyst must download the file (e.g., Controls.docx) and check how many items of each control the company has complied with, as explained above.
+  * The value 100% will be divided by the number of sub-items of each control. Thus, if 25 subitems are fulfilled by the organization (e.g., out of a total of 51), for example, the Security Practices (SP) control subitems, then the FRIS entry for this subitem will be = 49.02%. This procedure must be done for the other controls, Software (S) and People (P). In this context, if an organization meets 56% SP, 43% S, and 61% P, then the Security Risk (SR) the organization is at, using the Centroid defuzzification method, will be 50%;
+  * Items for each control are in the Controls.docx file. Thus, for the organization to know what it is complying with and what level of security risk it is in, the Security Analyst must download the file (e.g., Controls.docx) and check how many items of each control the company has complied with, as explained above.
 
 ### How to use FRIS
   * FRIS accepts a matrix [N X 3], where N represents the number of rows and three the number of columns, or simply a vector with elements [x1,x2,x3].
@@ -68,6 +68,12 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum (Or Mean Maxima)
 
 # WEB application, Automatic installation and use.
+### Step 1 - Download the entire contents of the INSTALL folder; 
+### Step 2 - Create a folder with the command "mkdir FOLDER" and unzip the INSTALL contents inside it; 
+### Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh and INSTALL.sh files, EX: "chmod +x run.sh INSTALL.sh"; 
+### Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
+### Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
+### Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following figure:
 
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
