@@ -73,7 +73,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh and INSTALL.sh files, EX: "chmod +x run.sh INSTALL.sh"; 
 * Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
 * Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
-* Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following figure 1:
+* Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following Figure 1:
 * ![alt text](https://github.com/dioxfile/FSRA-FRIS/blob/master/FSRA1.png)
 * Step 7 - Select all controls, which your organization complies with; 
 * Step 8 - Now go to the bottom of the page and click on the "Load Controls Checked" button; * After that click on the link " Generate Security Risk Assessment"; 
