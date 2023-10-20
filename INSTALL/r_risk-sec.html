@@ -1,0 +1,56 @@
+<script>
+	function getFrameContents(id){
+		var iFrame =  document.getElementById(id);
+		var iFrameBody;
+		if ( iFrame.contentDocument ) 
+		{ // FF
+				iFrameBody = iFrame.contentDocument.getElementsByTagName('body')[0];
+	    }
+	    let words = iFrameBody.innerHTML.split(' ');
+		let SR = parseInt(words[3]);
+        alert(SR);
+        return SR;
+ }
+</script>
+<html>
+ <head>
+  <title>Framework for Security Risk Assessment (FSRA) </title>
+ </head>
+  <h1><strong>Result Security Risk Assessment based on Standard ISO/IEC 27002:2022</strong></h1>
+  <font color="#9900FF"> <h1> <strong>INPUTS:</strong></h1> </font>
+  <br />
+  <body>
+  <div>
+    <iframe id="myFrame" src="result.txt" frameborder="10" height="300" width="90%"></iframe>
+    <script>
+       var frame = document.getElementById('myFrame');
+       frame.onload = function () {
+			var body = frame.contentWindow.document.querySelector('body');
+			body.style.fontSize = '50px';
+			body.style.lineHeight = '50px';
+			body.style.color = 'blue';		
+    };
+   </script>
+  </div>
+  </body>
+    <body>
+  <div>
+	<font color="#9900FF"> <h1> <strong>OUTPUT:</strong></h1> </font>
+    <iframe id="myFrame2" src="sra.txt" frameborder="10" height="200" width="90%"></iframe>
+    <script>
+       var frame2 = document.getElementById('myFrame2');
+       frame2.onload = function () {
+			var body2 = frame2.contentWindow.document.querySelector('body');
+			body2.style.fontSize = '50px';
+			body2.style.lineHeight = '50px';
+			body2.style.color = 'blue';	
+			var s = getFrameContents('myFrame2');
+			log.console(s);
+			
+    };
+   </script>
+  </div>
+  </body>
+
+</html>
+

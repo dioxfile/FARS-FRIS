@@ -31,4 +31,3 @@ else
     echo -e "\n\033[01;32mNow run the first command inside the folder where the application was downloaded:\n# 1- php8.1 -S 127.0.0.1:8001\n# 2- firefox (or google-chrome) http://127.0.0.1:8001\033[01;37m"
     exit 0
 fi
-
