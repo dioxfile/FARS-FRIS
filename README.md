@@ -74,11 +74,11 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
 * Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
 * Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following figure 1:
-* ![alt text](https://github.com/dioxfile/FSRA-FRIS/edit/master/FSRA1.png)
+* ![alt text](https://github.com/dioxfile/FSRA-FRIS/blob/master/FSRA1.png)
 * Step 7 - Select all controls, which your organization complies with; 
 * Step 8 - Now go to the bottom of the page and click on the "Load Controls Checked" button; * After that click on the link " Generate Security Risk Assessment"; 
 * Step 9 - Now show the result by clicking on the "Show Security Risk Assessment" link. After this, a page will be loaded as shown in Figure 2. This figure shows the level of security risk in which the organization finds itself depending on the number of FSRA controls that the organization has complied with.
-*  ![alt text](https://github.com/dioxfile/FSRA-FRIS/edit/master/FSRA2.png)
+*  ![alt text](https://github.com/dioxfile/FSRA-FRIS/blob/master/FSRA2.png)
 
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
