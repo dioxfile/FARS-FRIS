@@ -68,12 +68,12 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 * 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum (Or Mean Maxima)
 
 # WEB application, Automatic installation and use.
-### Step 1 - Download the entire contents of the INSTALL folder; 
-### Step 2 - Create a folder with the command "mkdir FOLDER" and unzip the INSTALL contents inside it; 
-### Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh and INSTALL.sh files, EX: "chmod +x run.sh INSTALL.sh"; 
-### Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
-### Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
-### Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following figure:
+#### Step 1 - Download the entire contents of the INSTALL folder; 
+#### Step 2 - Create a folder with the command "mkdir FOLDER" and unzip the INSTALL contents inside it; 
+#### Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh and INSTALL.sh files, EX: "chmod +x run.sh INSTALL.sh"; 
+#### Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
+#### Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
+#### Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in the following figure:
 
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
