@@ -67,6 +67,8 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ### After that, the following result will appear:
 * 5000 outputs will appear with the following characters "C=" and "MoM", which mean Centroid, and Average Maximum (Or Mean Maxima)
 
+# WEB application, Automatic installation and use.
+
 ## OBS:
   * The sirf.m code is designed to use the centroid method if the input values are between 60% and 100%. However, if the input values are less than 40%, the defuzzification method will be MoM (Average Maximum). Furthermore, any of the methods can be used for values between 40% and 59.999% because both presented similar test performances. However, in this situation, you must choose the defuzzification method, the "sirf.fis" file must be changed in line 12: DefuzzMethod='centroid' or DefuzzMethod='mom'
   * Here, input means the values of the security controls: Practices (SP), Software (S), and People (P).
