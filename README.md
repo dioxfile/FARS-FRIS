@@ -77,8 +77,9 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 ## Figure 1:
 * ![alt text](https://github.com/dioxfile/FSRA-FRIS/blob/master/FSRA1.png)
 * Step 7 - Select all controls, which your organization complies with; 
-* Step 8 - Now go to the bottom of the page and click on the "Load Controls Checked" button; * After that click on the link " Generate Security Risk Assessment"; 
-* Step 9 - Now show the result by clicking on the "Show Security Risk Assessment" link. After this, a page will be loaded as shown in Figure 2. This figure shows the level of security risk in which the organization finds itself depending on the number of FSRA controls it has complied with.
+* Step 8 - Now go to the bottom of the page and click on the "Load Controls Checked" button;
+* Step 9 - After that click on the link " Generate Security Risk Assessment"; 
+* Step 10 - Now show the result by clicking on the "Show Security Risk Assessment" link. After this, a page will be loaded as shown in Figure 2. This figure shows the level of security risk in which the organization finds itself depending on the number of FSRA controls it has complied with.
 ## Figure 2:
 *  ![alt text](https://github.com/dioxfile/FSRA-FRIS/blob/master/FSRA2.png)
 
