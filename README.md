@@ -70,7 +70,7 @@ FRIS follows three FSRA controls, which contain 93 sub-items of controls suggest
 # Simplified use of the FSRA framework.
 * Step 1 - Download the entire contents of the INSTALL folder; 
 * Step 2 - Create a folder with the command "mkdir FOLDER" and copy the INSTALL contents inside it; 
-* Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh and INSTALL.sh files, EX: "chmod +x run.sh INSTALL.sh"; 
+* Step 3 - Enter the new FOLDER, EX: "cd FOLDER", and give execution permission to the run.sh, INSTALL.sh, and octave.m files, EX: "chmod +x run.sh INSTALL.sh octave.m"; 
 * Step 4 - Run the INSTALL.sh file, EX: "./INSTALL.sh"; 
 * Step 5 - After executing INSTALL.sh, execute the following command, EX: "php8.1 -S localhost:8001". It will start a PHP web server inside the current folder; 
 * Step 6 - Now open a web browser of your choice, and in the address bar type the following address, localhost:8001, after that, a web page will appear as shown in Figure 1:
