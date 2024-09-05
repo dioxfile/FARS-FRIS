@@ -1,5 +1,5 @@
 # Framework for Security Risk Analysis (FSRA) and Fuzzy Risk Inference System (FRIS) based on Standard ISO/IEC 27002:2022
-#  <[Link Paper:](https://seer.ufrgs.br/index.php/rita/article/view/136309)>
+#  Link Paper: <[https://seer.ufrgs.br/index.php/rita/article/view/136309](https://seer.ufrgs.br/index.php/rita/article/view/136309)>
 ### 1 - This program is free software; 
 ### 2 - You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; 
 ### 3 - Either version 3 of the License or (at your option) any later version.                               
