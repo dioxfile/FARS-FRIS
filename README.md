@@ -1,5 +1,8 @@
 # Framework for Security Risk Analysis (FSRA) and Fuzzy Risk Inference System (FRIS) based on Standard ISO/IEC 27002:2022
 ##  Link Paper: <[https://doi.org/10.22456/2175-2745.136309](https://seer.ufrgs.br/index.php/rita/article/view/136309)>
+## Abstract:
+# Information security is a critical aspect for organizations, and a problem in this regard consists of
+knowing the level of vulnerability in which organizations. Therefore, this article aims to present a Cybersecurity. Framework (FSRA) based on the ISO/IEC 27002:2022 standard. In addition, a Fuzzy Risk Inference System (FRIS) is presented, which uses FSRA controls - Security Practices (SP), Software (S), and People (P) as input, a total of 93 sub-items. A FRIS output is the Security Risk (SR) in which the organization is due to non-compliance or partial compliance with FSRA controls. Thus, if each control is fully met, its entry value in the FRIS will be 100%. Otherwise, it will be proportional. Therefore, when the FRIS returns the SR, whose output values can be Low (13% to 39.99%), Medium (40% to 59.99%), or High (60% to 100%), the security analyst can measure the risk security, in which the organization is located, according to ISO/IEC 27002:2022 and from that know where to act and how to act.
 ### 1 - This program is free software; 
 ### 2 - You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; 
 ### 3 - Either version 3 of the License or (at your option) any later version.                               
